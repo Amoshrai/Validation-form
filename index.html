@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form.2</title>
+</head>
+
+<body>
+    <h1><u>CHANGING PASSWORD</u></h1><br>
+    <center>
+        <h2>
+            Please complete the for underneath, in order for you to change your password for your account.
+        </h2>
+    </center>
+    <form>
+        <fieldset>
+            <legend>Account info</legend>
+            <label for="a">Name:</label>
+            <input name="a" placeholder="Enter first name" id="A" class="cd"><br><br>
+            <label for="b">Sur name:</label>
+            <input name="b" placeholder="Enter last name" id="B" class="cd"><br><br>
+            <label for="c">Email:</label>
+            <input name="c" placeholder="Enter email" id="C" class="cd"><bR><Br>
+            <label for="d">User ID:</label>
+            <input name="d" placeholder="Enter your account ID" id="D" class="cd"><br><br>
+            <label for="f ">Phone:</label>
+            <input name="f" placeholder="Enter your phone number" id="E" class="cd"><br><br>
+            <label for="g">Password:</label>
+            <input name="g" placeholder="Enter new password" id="F" class="cd"><br><br>
+            <label for="h">New Password:</label>
+            <input name="h" placeholder="Confirm new password" id="G" class="cd"><br><br>
+        </fieldset>
+    </form>
+    <button class="cd" type="submit" onclick="check()">Submit here</button>
+
+
+    <script>
+        function check() {
+            Name = document.getElementById("A").value;
+            Sur_name = document.getElementById("B").value;
+            Email = document.getElementById("C").value;
+            User_ID = document.getElementById("D").value;
+            Phone = document.getElementById("E").value;
+            Password = document.getElementById("F").value;
+            New_Password = document.getElementById("G").value;
+            A = "Amosh1";
+            B = "Mosh"
+            if (Name == "" || Sur_name == "" || Email == "" || User_ID == "" || Phone == "" || New_Password == "" || Password == "") {
+                alert("All the boxes must be filled!")
+            }
+            letter = /^[a-zA-Z]+$/;
+            if (Name.match(letter) && Sur_name.match(letter)) {
+                
+            
+            if (User_ID == A && Password == B) {
+                alert("Sucessfully Changed.")}
+             
+                else{
+                alert("Incorrect User_ID or Password")
+                       }
+            } 
+            
+
+            
+            
+            
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+    <style>
+        .cd {
+            font-size: 30px;
+            text-shadow: 2px 2px 2px rgb(209, 209, 90);
+        }
+
+        form {
+            font-size: 30px;
+            text-shadow: 2px 2px 2px blue;
+
+        }
+
+        #d {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+
+
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 2px red;
+        }
+
+        h2 {
+            border: 4px solid black;
+            height: 50px;
+        }
+
+        P {
+            font-size: 50px;
+
+        }
+    </style>
+
+
+</body>
+<p>Please fill every box in order <br>for you to change your password.</p>
+
+</html>
